@@ -1,0 +1,10 @@
+let mapleader = ',' 
+map <Leader>rtag :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+let g:ctrlp_map = '<c-t>'
+
+let g:vroom_map_keys=0
+" nmap <leader>r :call vroom#RunTestFile({'runner':'testdrb'})<CR>
+nmap <leader>r :call vroom#RunTestFile({'runner':'testrbl'})<CR>
+nmap <leader>R :call vroom#RunNearestTest({'runner':'testrbl'})<CR>
+
+map gm :call cursor(0, virtcol('$')/2)<CR>
