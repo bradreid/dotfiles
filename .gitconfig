@@ -1,0 +1,34 @@
+[alias]
+ co = checkout
+ com = checkout master
+ cob = checkout -b
+ st = status
+ ci = commit -va 
+ cv = commit -v
+ br = branch
+ brd = branch -d
+ brm = checkout master -b
+ mt = mergetool
+ mrgm = merge master
+ ls = branch -a
+ wtf = whatchanged -p
+ undo = reset --soft HEAD^
+ plog = log --pretty=tformat:"%h %Cblue%cr%Creset %cn %Cgreen%s%Creset"
+ unstage = reset HEAD
+ chp = cherry-pick
+ lgm = log --no-merges --oneline
+ pr = pull --rebase
+ brc = branch --contains
+ rpo = remote prune origin
+ d = difftool
+[user]
+  name = Brad Reid
+  email = bradreid20@gmail.com
+[core]
+  editor = vim
+[merge]
+  tool = vimdiff
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
